@@ -6,7 +6,22 @@
 <button class="ui primary button">Test</button>
 <hr>
 <app-servers></app-servers>
+<button class="ui primary button" (click)="showModal()">Show Modal</button>
 
+<div class="ui modal">
+    <i class="close icon"></i>
+    <div class="header">
+        Profile Picture
+    </div>
+</div>
+
+<div class="ui left demo vertical inverted sidebar labeled icon menu">
+    <a href="" class="item"><i class="home icon"></i>Home</a>
+    <a href="" class="item"><i class="block layout icon"></i>Topics</a>
+    <a href="" class="item"><i class="smile icon"></i>Friends</a>
+</div>
+
+<button class="ui basic primary button" (click)="onToggle()">Toggle Me</button>
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
