@@ -1,3 +1,22 @@
-<p>
-  feed works!
-</p>
+<div class="ui comments">
+  <h3 class="ui dividing header">Comments</h3>
+  <div class="comment" *ngFor='let t of tweets'>
+    <a class="avatar">
+      <img src="/avatars/{{t.avatar}}">
+    </a>
+    <div class="content">
+      <a class="author">{{t.author}}</a>
+      <div class="metadata">
+        <span class="date">{{t.date}}</span>
+      </div>
+      <div class="text">
+        {{t.body}}
+      </div>
+      <div class="actions">
+        <a class="reply">Reply</a>
+        <a class='like'>
+          <i class="like icon"></i>{{t.favorites.length}} Favorites
+        </a>
+      </div>
+    </div>
+  </div>
