@@ -1,10 +1,19 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
+import { MenuComponent } from './menu/menu.component';
+import { FeedComponent } from './feed/feed.component';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        ServerComponent,
+        ServersComponent,
+        MenuComponent,
+        FeedComponent
       ],
     }).compileComponents();
   }));

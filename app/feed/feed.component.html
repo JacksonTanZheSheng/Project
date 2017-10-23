@@ -1,22 +1,39 @@
-<div class="ui comments">
+<form class="ui form">
+  <div class="field">
+    <label>What's on your mind?</label>
+    <textarea name="body" placeholder="Penny for your thoughts" type="text" [(ngModel)]='tweetText'></textarea>
+  </div>
+
+  <button class="ui button primary" (click)='onNewTweet()'>Tweet</button>
+</form>
+
+<div class="ui comments" *ngIf='tweets.length'>
   <h3 class="ui dividing header">Comments</h3>
   <div class="comment" *ngFor='let t of tweets'>
     <a class="avatar">
-      <img src="/avatars/{{t.avatar}}">
+      <img src="/assets/avatars/{{t.avatar}}">
     </a>
     <div class="content">
       <a class="author">{{t.author}}</a>
       <div class="metadata">
-        <span class="date">{{t.date}}</span>
+        <span class="date">{{t.date | date: 'hh:mm:ss dd/mm/yy'}}</span>
       </div>
       <div class="text">
         {{t.body}}
       </div>
       <div class="actions">
         <a class="reply">Reply</a>
-        <a class='like'>
-          <i class="like icon"></i>{{t.favorites.length}} Favorites
+        <a class='like' (click)='onFavorite(t)'>
+          <i class="like icon" [ngClass]='{ liked: t.hasFavorited(userService.getCurrentUser()) }'></i>{{t.favorites.length}} Favorites
+        </a>
+        <a class="retweet" (click)='onRetweet(t)'>
+          <i class="retweet icon" [ngClass]='{ retweeted: t.hasRetweeted(userService.getCurrentUser()) }'></i>{{t.retweets.length}} Retweets
         </a>
       </div>
     </div>
   </div>
+</div>
+
+<div *ngIf='!tweets.length'>
+  <h2>There are no tweets...</h2>
+</div>
