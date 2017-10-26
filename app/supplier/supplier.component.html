@@ -1,0 +1,180 @@
+<div class="ui huge blue top attached tabular menu" (click)="onChangeTab()">
+  <div class="item">
+    <div class="ui massive breadcrumb">
+      <a class="section" routerLink="/Supplier" routerLinkActive="active">Supplier</a>
+      <i class="right chevron icon divider"></i>
+      <div class="active section">Documents and Reports</div>
+    </div>
+  </div>
+  <div class="right menu">
+    <a class="active item" data-tab="document">
+      <span>Documents</span>
+    </a>
+    <a class="item" data-tab="report">
+      <span>Reports</span>
+    </a>
+  </div>
+</div>
+
+<div class="ui massive inverted bottom attached active tab segment" data-tab="document">
+  <div class="ui center aligned three column grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui massive inverted red circular animated fade button">
+          <div class="visible content">
+            <i class="huge file text icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading file text icon"></i>
+            Invoice
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive inverted orange circular animated fade button">
+          <div class="visible content">
+            <i class="huge counterclockwise rotated undo icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading undo icon"></i>
+            Payment
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive inverted yellow circular animated fade button">
+          <div class="visible content">
+            <i class="huge users icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading users icon"></i>
+            Maintain Supplier
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive inverted green circular animated fade button">
+          <div class="visible content">
+            <i class="huge dollar icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading add icon"></i>
+            Debit Note
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive inverted blue circular animated fade button">
+          <div class="visible content">
+            <i class="huge dollar icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading minus icon"></i>
+            Credit Note
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive inverted violet circular animated fade button">
+          <div class="visible content">
+            <i class="huge refresh icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading refresh icon"></i>
+            Contra
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive inverted purple circular animated fade button">
+          <div class="visible content">
+            <i class="huge flipped undo icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading undo icon"></i>
+            Refund
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui massive inverted attached tab segment" data-tab="report">
+  <div class="ui center aligned three column grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui massive inverted red circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Aging Report
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive inverted orange circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Post Dated Cheque Listing
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive inverted yellow circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Supplier Document Listing
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive inverted green circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Statement of Account
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive inverted blue circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Due Document Report
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive inverted violet circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Sales & Collection Analysis
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

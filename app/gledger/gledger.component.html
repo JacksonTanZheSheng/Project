@@ -1,0 +1,171 @@
+<div class="ui huge blue top attached tabular menu" (click)="onChangeTab()">
+  <div class="item">
+    <div class="ui massive breadcrumb">
+      <a class="section" routerLink="/gledger" routerLinkActive="active">G. Ledger</a>
+      <i class="right chevron icon divider"></i>
+      <div class="active section">Documents and Reports</div>
+    </div>
+  </div>
+  <div class="right menu">
+    <a class="active item" data-tab="document">
+      <span>Documents</span>
+    </a>
+    <a class="item" data-tab="report">
+      <span>Reports</span>
+    </a>
+  </div>
+</div>
+
+<div class="ui massive bottom attached active tab segment" data-tab="document">
+  <div class="ui center aligned three column grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui massive red circular animated fade button">
+          <div class="visible content">
+            <i class="huge dollar icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading dollar icon"></i>
+            Cash Book Entry
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive orange circular animated fade button">
+          <div class="visible content">
+            <i class="huge dollar icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading dollar icon"></i>
+            Maintain Budget
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="ui massive yellow circular animated fade button">
+              <div class="visible content">
+                <i class="huge clone icon"></i>
+              </div>
+              <div class="hidden content">
+                <i class="loading clone icon"></i>
+                Maintain Chart of Account
+              </div>
+            </div>
+          </div>
+      <div class="column">
+        <div class="ui massive green circular animated fade button">
+          <div class="visible content">
+            <i class="huge edit icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading edit icon"></i>
+            Journal Entry
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive blue circular animated fade button">
+          <div class="visible content">
+            <i class="huge cubes icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading cubes icon"></i>
+            Maintain Stock Value
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive violet circular animated fade button">
+          <div class="visible content">
+            <i class="huge desktop icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading desktop icon"></i>
+            Bank Reconciliation
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui massive attached tab segment" data-tab="report">
+  <div class="ui center aligned three column grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui massive red circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            GL Document Listing
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive orange circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Profit & Loss Statement
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive yellow circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Ledger Report
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive green circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Receipt & Payment Report
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive blue circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Trial Balance
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive violet circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+           Balance Sheet
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

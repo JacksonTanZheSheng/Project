@@ -1,0 +1,170 @@
+<div class="ui huge blue top attached tabular menu" (click)="onChangeTab()">
+  <div class="item">
+    <div class="ui massive breadcrumb">
+      <a class="section" routerLink="/purchase" routerLinkActive="active">Purchase</a>
+      <i class="right chevron icon divider"></i>
+      <div class="active section">Documents and Reports</div>
+    </div>
+  </div>
+  <div class="right menu">
+    <a class="active item" data-tab="document">
+      <span>Documents</span>
+    </a>
+    <a class="item" data-tab="report">
+      <span>Reports</span>
+    </a>
+  </div>
+</div>
+
+<div class="ui massive inverted bottom attached active tab segment" data-tab="document">
+  <div class="ui center aligned three column grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui massive inverted red circular animated fade button">
+          <div class="visible content">
+            <i class="huge file text icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading cube icon"></i>
+            Purchase Order
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive inverted orange circular animated fade button">
+          <div class="visible content">
+            <i class="huge file text icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading dollar icon"></i>
+            Purchase Debit Note
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive inverted yellow circular animated fade button">
+          <div class="visible content">
+            <i class="huge cube icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading help icon"></i>
+            Purchase Request
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive inverted green circular animated fade button">
+          <div class="visible content">
+            <i class="huge file text icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading file text icon"></i>
+            Purchase Invoice
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive inverted blue circular animated fade button">
+          <div class="visible content">
+            <i class="huge cubes icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading undo icon"></i>
+            Purchase Returned
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive inverted violet circular animated fade button">
+          <div class="visible content">
+            <i class="huge shipping icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading cubes icon"></i>
+            Good Received
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive inverted purple circular animated fade button">
+          <div class="visible content">
+            <i class="huge cube icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading money icon"></i>
+            Cash Purchase
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui massive inverted attached tab segment" data-tab="report">
+  <div class="ui center aligned three column grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui massive inverted red circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Back Order Report
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive inverted orange circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Purchase Analysis by Document
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive inverted yellow circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Purchase Document Listing
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive inverted green circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Profit & Loss by Document
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive inverted blue circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Yearly Purchase Analysis
+            <i class="large loading print icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

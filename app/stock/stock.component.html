@@ -1,0 +1,161 @@
+<div class="ui huge blue top attached tabular menu" (click)="onChangeTab()">
+  <div class="item">
+    <div class="ui massive breadcrumb">
+      <a class="section" routerLink="/stock" routerLinkActive="active">Stock</a>
+      <i class="right chevron icon divider"></i>
+      <div class="active section">Documents and Reports</div>
+    </div>
+  </div>
+  <div class="right menu">
+    <a class="active item" data-tab="document">
+      <span>Documents</span>
+    </a>
+    <a class="item" data-tab="report">
+      <span>Reports</span>
+    </a>
+  </div>
+</div>
+
+<div class="ui massive bottom attached active tab segment" data-tab="document">
+  <div class="ui center aligned three column grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui massive red circular animated fade button">
+          <div class="visible content">
+            <i class="huge cubes icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading arrow right icon"></i>
+            Stock Received
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive orange circular animated fade button">
+          <div class="visible content">
+            <i class="huge help icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading help icon"></i>
+            Stock Issue
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive yellow circular animated fade button">
+          <div class="visible content">
+            <i class="huge bar chart icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading bar chart icon"></i>
+            Delivery Order
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive green circular animated fade button">
+          <div class="visible content">
+            <i class="huge barcode icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading barcode icon icon"></i>
+            Maintain Stock Item
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="ui massive blue circular animated fade button">
+          <div class="visible content">
+            <i class="huge configure icon"></i>
+          </div>
+          <div class="hidden content">
+            <i class="loading configure icon icon"></i>
+            Stock Adjustment
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui massive attached tab segment" data-tab="report">
+  <div class="ui center aligned three column grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui massive red circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Stock Card
+            <i class="large loading cube icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive orange circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Reorder Advice
+            <i class="large loading cube icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive yellow circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Stock Document Listing
+            <i class="large loading cube icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive green circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Stock Month End Balance
+            <i class="large loading cube icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui massive blue circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Stock Aging Report
+            <i class="large loading cube icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui massive violet circular animated fade button">
+          <div class="visible content">
+            <i class="huge print icon"></i>
+          </div>
+          <div class="hidden content">
+            Yearly Sales Analysis
+            <i class="large loading cube icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

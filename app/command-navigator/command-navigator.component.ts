@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var $: any;
-
 @Component({
   selector: 'app-command-navigator',
   templateUrl: './command-navigator.component.html',
@@ -15,12 +13,4 @@ export class CommandNavigatorComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  onChangeTab() {
-    $('.menu .item').tab();
-  }
-
-  getColor() {
-		return this.tabColor === 'black' ? 'white' : 'black';
-	}
 }

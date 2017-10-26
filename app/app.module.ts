@@ -21,6 +21,14 @@ import { ClockComponent } from './clock/clock.component';
 
 import { ClockService } from './clock.service';
 import { CommandNavigatorComponent } from './command-navigator/command-navigator.component';
+import { DocumentsComponent } from './documents/documents.component';
+import { ReportsComponent } from './reports/reports.component';
+import { SalesComponent } from './sales/sales.component';
+import { GledgerComponent } from './gledger/gledger.component';
+import { CustomerComponent } from './customer/customer.component';
+import { SupplierComponent } from './supplier/supplier.component';
+import { PurchaseComponent } from './purchase/purchase.component';
+import { StockComponent } from './stock/stock.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +43,15 @@ import { CommandNavigatorComponent } from './command-navigator/command-navigator
     HeaderMenuComponent,
     IconMenuComponent,
     ClockComponent,
-    CommandNavigatorComponent
+    CommandNavigatorComponent,
+    DocumentsComponent,
+    ReportsComponent,
+    SalesComponent,
+    GledgerComponent,
+    CustomerComponent,
+    SupplierComponent,
+    PurchaseComponent,
+    StockComponent
   ],
   imports: [
     BrowserModule, FormsModule, routing
