@@ -1,0 +1,494 @@
+<div class="ui large menu">
+  <a class="item" (click)="onToggle()">
+    <i class="blue medium sidebar icon"></i>
+  </a>
+  <a class="ui simple dropdown item">
+    File
+    <div class="menu">
+      <div class="item">New Application Window</div>
+      <div class="item">Open...</div>
+      <div class="item">Company Profile</div>
+      <div class="item">Product Activation</div>
+      <div class="item">Logon</div>
+      <div class="item">Change Password...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Backup Database...</div>
+      <div class="item">Show Active Connections...</div>
+      <div class="item">Data Import...</div>
+      <div class="item">
+        <i class="dropdown icon"></i>
+        <span class="text">Data Import (SQL Payroll)</span>
+        <div class="menu">
+          <div class="item">Save GL Account To File</div>
+          <div class="item">Import Payment Voucher / Journal Entry...</div>
+        </div>
+      </div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">
+        <span class="description">Ctrl+W</span>
+        Close
+      </div>
+      <div class="item">Close All</div>
+      <div>
+        <hr>
+      </div>
+      <div class="disabled item">
+        <i class="dropdown icon"></i>
+        <span class="text">Export Report</span>
+      </div>
+      <div class="item">Printer Setup...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Customize SQL Account Modules</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">
+        <i class="dropdown icon"></i>
+        <span class="text">Run</span>
+        <div class="menu">
+          <div class="item">Congifure Programs...</div>
+        </div>
+      </div>
+      <div class="item">Exit</div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    Edit
+    <div class="menu">
+      <div class="item">
+        <span class="description">Ctrl+Z</span>
+        Undo
+      </div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">
+        <span class="description">Ctrl+X</span>
+        Cut
+      </div>
+      <div class="item">
+        <span class="description">Ctrl+C</span>
+        Copy
+      </div>
+      <div class="item">
+        <span class="description">Ctrl+V</span>
+        Paste
+      </div>
+      <div class="item">Clear</div>
+      <div class="item">
+        <span class="description">Ctrl+A</span>
+        Select All&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      </div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    View
+    <div class="menu">
+      <div class="item">Command Navigator</div>
+      <div class="item">Tabbed Docking (Beta)</div>
+      <div class="item">Application Theme</div>
+      <div class="item">Allow Multiple Windows...</div>
+      <div class="item">Enable Windows Task Bar...</div>
+      <div class="item">
+        <span class="description">F11</span>
+        Full Screen
+      </div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Smart Card Reader...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Show Chart</div>
+      <div class="item">
+        <span class="description">Shift+Ctrl+S</span>
+        Sales Price History...
+      </div>
+      <div class="item">
+        <span class="description">Shift+Ctrl+P</span>
+        Purchase Price History...&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      </div>
+      <div class="item">
+        <span class="description">Ctrl+F11</span>
+        Available Stock Balance...
+      </div>
+      <div class="item">
+        <span class="description">Ctrl+T</span>
+        Price Tag...
+      </div>
+      <div class="item">Stock Item Picture</div>
+      <div class="item">Stock Item Search</div>
+      <div class="item">
+        <span class="description">F9</span>
+        Stock Item Search...
+      </div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    GL
+    <div class="menu">
+      <div class="item">Maintain Account</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Cash Book Entry...</div>
+      <div class="item">Journal Entry...</div>
+      <div class="item">Foreign Bank Adjustment...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Maintain Opening Balance...</div>
+      <div class="item">Bank Reconciliation...</div>
+      <div class="item">Maintain Stock Value...</div>
+      <div class="item">Maintain Budget...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print G/L Document Listing...</div>
+      <div class="item">Print Journal of Transaction Listing...</div>
+      <div class="item">Print Transaction Summary Listing...</div>
+      <div class="item">Print Bank Reconciliation Listing...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Ledger Report...</div>
+      <div class="item">Print Trial Balance...</div>
+      <div class="item">Print Receipt & Payment Report...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Profit & Loss Statement...</div>
+      <div class="item">Print Balance Sheet Statement...</div>
+      <div class="item">Print Cash Flow Statement...</div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    Customer
+    <div class="menu">
+      <div class="item">Maintain Customer...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Customer Invoice...</div>
+      <div class="item">Customer Payment...</div>
+      <div class="item">Customer Debit Note...</div>
+      <div class="item">Customer Credit Note...</div>
+      <div class="item">Customer Refund...</div>
+      <div class="item">Customer Contra...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Customer Document Listing...</div>
+      <div class="item">Print Customer Balance Report...</div>
+      <div class="item">Print Customer Due Document...</div>
+      <div class="item">Print Customer Aging Report...</div>
+      <div class="item">Print Customer Statement...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Ledger Report...</div>
+      <div class="item">Print Trial Balance...</div>
+      <div class="item">Print Receipt & Payment Report...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Customer Post Dated Cheque Listing...</div>
+      <div class="item">Print Customer Analysis By Document...</div>
+      <div class="item">Print Customer Bills and Collection Analysis...</div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    Supplier
+    <div class="menu">
+      <div class="item">Maintain Supplier...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Supplier Invoice...</div>
+      <div class="item">Supplier Payment...</div>
+      <div class="item">Supplier Debit Note...</div>
+      <div class="item">Supplier Credit Note...</div>
+      <div class="item">Supplier Refund...</div>
+      <div class="item">Supplier Contra...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Supplier Document (InterBank GIRO) Listing...</div>
+      <div class="item">Print Supplier Balance Report...</div>
+      <div class="item">Print Supplier Due Document...</div>
+      <div class="item">Print Supplier Aging Report...</div>
+      <div class="item">Print Supplier Statement...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Supplier Post Dated Cheque Listing...</div>
+      <div class="item">Print Supplier Analysis By Document...</div>
+      <div class="item">Print Supplier Bills and Collection Analysis...</div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    Sales
+    <div class="menu">
+      <div class="item">Quotation...</div>
+      <div class="item">Sales Order...</div>
+      <div class="item">Delivery Order...</div>
+      <div class="item">Invoice...</div>
+      <div class="item">Cash Sales...</div>
+      <div class="item">Extra Delivery Order...</div>
+      <div class="item">Debit Note...</div>
+      <div class="item">Credit Note...</div>
+      <div class="item">Sales Cancelled Note...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Sales Document Listing...</div>
+      <div class="item">Print Outstanding Sales Document Listing...</div>
+      <div class="item">Print Sales Picking List...</div>
+      <div class="item">Print Sales Price History...</div>
+      <div class="item">Print Profit & Loss by Document...</div>
+      <div class="item">Print Profit & Loss S/N by Document...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Sales Analysis By Document...</div>
+      <div class="item">Print Yearly Sales Analysis...</div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    Purchase
+    <div class="menu">
+      <div class="item">Purchase Request...</div>
+      <div class="item">Purchase Order...</div>
+      <div class="item">Goods Received...</div>
+      <div class="item">Purchase Invoice...</div>
+      <div class="item">Cash Purchase...</div>
+      <div class="item">Extra Goods Received...</div>
+      <div class="item">Purchase Debit Note...</div>
+      <div class="item">Purchase Credit Note...</div>
+      <div class="item">Purchase Cancelled Note...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Purchase Document Listing...</div>
+      <div class="item">Print Outstanding Purchase Document Listing...</div>
+      <div class="item">Print Purchase Price History...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Purchase Analysis By Document...</div>
+      <div class="item">Print Yearly Purchase Analysis...</div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    Stock
+    <div class="menu">
+      <div class="item">Maintain Stock Group...</div>
+      <div class="item">Maintain Stock Item...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Maintain Stock Category...</div>
+      <div class="item">Maintain Stock Category Template...</div>
+      <div class="item">Maintain Stock Price Tag...</div>
+      <div class="item">Maintain Item Template...</div>
+      <div class="item">Maintain Stock Item Matrix Profile...</div>
+      <div class="item">Maintain Location...</div>
+      <div class="item">Maintain Batch...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Stock Received...</div>
+      <div class="item">Stock Issue...</div>
+      <div class="item">Stock Transfer...</div>
+      <div class="item">Stock Adjustment...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Stock Document Listing...</div>
+      <div class="item">Print Outstanding Stock Document Listing...</div>
+      <div class="item">Print Stock Price History...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Stock Card...</div>
+      <div class="item">Print Stock Card Qty...</div>
+      <div class="item">Print Stock Month End Balance...</div>
+      <div class="item">Print Stock Aging...</div>
+      <div class="item">Print Stock Analysis By Document...</div>
+      <div class="item">Print Stock Batch Expiry...</div>
+      <div class="item">Print Serial Number Conflict...</div>
+      <div class="item">Print Serial Number Outstanding...</div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    Production
+    <div class="menu">
+      <div class="item">Stock Item Assembly...</div>
+      <div class="item">Stock Iteem Disassembly...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print BOM Relation...</div>
+      <div class="item">Print BOM Listing...</div>
+      <div class="item">Print BOM Material Usage...</div>
+      <div class="item">Print BOM Planner...</div>
+      <div class="item">Print BOM Wastage Report...</div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    GST
+    <div class="menu">
+      <div class="item">
+        <app-clock></app-clock>
+      </div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">New GST Return...</div>
+      <div class="item">Open GST Return...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Maintain Tax...</div>
+      <div class="item">GST Effective Date...</div>
+      <div class="item">Gift / Deemed Supply...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print GST Listing...</div>
+      <div class="item">Generate GST Audit File (GAF)...</div>
+      <div class="item">Print GST Bad Debit Relief...</div>
+      <div class="item">Print GST Taxable Listing (Manual)...</div>
+      <div class="item">Print Gift / Deemed Supply Listing...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">
+        <i class="left dropdown icon"></i>
+        <span class="text">RMCD Guidelines</span>
+        <div class="menu">
+          <div class="item">1 General Guide (revised at 24 August 2017)</div>
+          <div class="item">2 Handbook for GST for Businesses</div>
+          <div class="item">3 GST Electronic Services Taxpayer Access Pointer (TAP) Handbook</div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    Inquiry
+    <div class="menu">
+      <div class="item">Account Inquiry...</div>
+      <div class="item">Cash Flow Inquiry...</div>
+      <div class="item">Cash Flow Forecast...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Customer Pricing Inquiry...</div>
+      <div class="item">Supplier Pricing Inquiry...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Serial Number Inquiry...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">SQL Power Search...</div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    Tools
+    <div class="menu">
+      <div class="item">Maintain User Group...</div>
+      <div class="item">Maintain User...</div>
+      <div class="item">User Access Right Assignment...</div>
+      <div class="item">Maintain Style...</div>
+      <div class="item">Maintain Commission Script...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Maintain Document Number...</div>
+      <div class="item">Maintain Acceptable Transaction Date...</div>
+      <div class="item">Maintain Form Mode...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Maintain Agent...</div>
+      <div class="item">Maintain Area...</div>
+      <div class="item">Maintain Terms...</div>
+      <div class="item">Maintain Currency...</div>
+      <div class="item">Maintain Journal...</div>
+      <div class="item">Maintain Payment Method...</div>
+      <div class="item">Maintain Project...</div>
+      <div class="item">Maintain Tax...</div>
+      <div class="item">Maintain Company Category...</div>
+      <div class="item">Maintain Shipper...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Print Audit Trail...</div>
+      <div class="item">Analyse Data Intergrity...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Report Designer...</div>
+      <div class="item">Print Bar Code (Direct Printer)...</div>
+      <div class="item">Print Bar Code (Windows Printer)...</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">
+        <i class="left dropdown icon"></i>
+        <span class="text">DIY</span>
+        <div class="menu">
+          <div class="item">Maintain DIY...</div>
+          <div class="item">SQL Control Center...</div>
+          <div>
+            <hr>
+          </div>
+          <div class="item">DIY Authenticator...</div>
+        </div>
+      </div>
+      <div class="item">Options</div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    Window
+    <div class="menu">
+      <div class="item">Tile Vertical</div>
+      <div class="item">Tile Horizontal</div>
+      <div class="item">Arrage All</div>
+      <div class="item">Cascade</div>
+      <div>
+        <hr>
+      </div>
+      <div class="item">1</div>
+    </div>
+  </a>
+  <a class="ui simple dropdown item">
+    Help
+    <div class="menu">
+      <div class="item">
+        <span class="description">F1</span>
+        SQL Account Help
+      </div>
+      <div>
+        <hr>
+      </div>
+      <a target="_blank" href="http://www.sql.com.my" class="item">eStream Software Home Page</a>
+      <a target="_blank" href="http://www.sql.com.my/sqlacc" class="item">SQL Account Home Page</a>
+      <a target="_blank" href="http://www.sql.com.my/support/remote/" class="item">SQL Account Remote Support</a>
+      <div>
+        <hr>
+      </div>
+      <div class="item">Application Integrity</div>
+      <div class="item">About SQL Account</div>
+    </div>
+  </a>
+</div>

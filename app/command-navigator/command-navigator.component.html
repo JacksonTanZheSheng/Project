@@ -1,0 +1,45 @@
+<div class="ui left demo inverted vertical sidebar labeled icon menu">
+  <a class="item">
+    <i class="red home icon"></i>
+    <span style="color:red">G. Ledger</span>
+  </a>
+  <a class="item">
+    <i class="orange user icon"></i>
+    <span style="color:orange">Customer</span>
+  </a>
+  <a class="item">
+    <i class="yellow user outline icon"></i>
+    <span style="color:yellow">Supplier</span>
+  </a>
+  <a class="item">
+    <i class="green cube icon"></i>
+    <span style="color:aquamarine">Sales</span>
+  </a>
+  <a class="item">
+    <i class="blue cube icon"></i>
+    <span style="color:skyblue">Purchase</span>
+  </a>
+  <a class="item">
+    <i class="violet cubes icon"></i>
+    <span style="color:violet">Stock</span>
+  </a>
+</div>
+
+<div class="ui massive top attached tabular menu" (click)="onChangeTab()">
+  <div class="right menu">
+    <a class="active item" data-tab="document">
+      <span>Documents</span>
+    </a>
+    <a class="item" data-tab="report">
+      <span>Reports</span>
+    </a>
+  </div>
+</div>
+
+<div class="ui massive bottom attached active tab segment" data-tab="document">
+  Document success
+</div>
+
+<div class="ui massive attached tab segment" data-tab="report">
+  Report success
+</div>

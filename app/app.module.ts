@@ -15,6 +15,12 @@ import {FriendsComponent } from './friends/friends.component';
 import {MessagesComponent } from './messages/messages.component';
 import { routing, appRoutingProviders } from './app.routing';
 import { FriendComponent } from './friend/friend.component';
+import { HeaderMenuComponent } from './header-menu/header-menu.component';
+import { IconMenuComponent } from './icon-menu/icon-menu.component';
+import { ClockComponent } from './clock/clock.component';
+
+import { ClockService } from './clock.service';
+import { CommandNavigatorComponent } from './command-navigator/command-navigator.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +31,16 @@ import { FriendComponent } from './friend/friend.component';
     FeedComponent,
     FriendsComponent,
     MessagesComponent,
-    FriendComponent
+    FriendComponent,
+    HeaderMenuComponent,
+    IconMenuComponent,
+    ClockComponent,
+    CommandNavigatorComponent
   ],
   imports: [
     BrowserModule, FormsModule, routing
   ],
-  providers: [UserService, FeedService, appRoutingProviders],
+  providers: [UserService, FeedService, appRoutingProviders, ClockService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

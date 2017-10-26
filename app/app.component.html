@@ -15,9 +15,18 @@
     </div>
 </div> -->
 
-<app-menu></app-menu>
+<!-- <app-menu></app-menu>
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+
+<div class="ui inverted segment">
+    <app-header-menu></app-header-menu>
+    <div class="ui inverted divider"></div>
+    <app-icon-menu></app-icon-menu>
+</div>
+
+<app-command-navigator></app-command-navigator>
+
 
 <!-- <!DOCTYPE html>
 <html lang="en">
@@ -84,95 +93,3 @@
     <div class="ui disabled button">Disabled</div>
 </body>
 </html> -->
-
-<!-- <div class="ui menu">
-        <a class="ui simple dropdown item">
-          File
-          <div class="menu">
-            <div class="item">New Application Window</div>
-            <div class="item">Open...</div>
-            <div class="item">Company Profile</div>
-            <div class="item">Product Activation</div>
-            <div class="item">Logon</div>
-            <div class="item">Change Password...</div>
-            <div class="item"><hr></div>
-            <div class="item">Backup Database...</div>
-            <div class="item">Show Active Connections...</div>
-            <div class="item">Data Import...</div>
-            <div class="item">
-                <i class="dropdown icon"></i>
-                <span class="text">Data Import (SQL Payroll)</span>
-                <div class="menu">
-                    <div class="item">Save GL Account To File</div>
-                    <div class="item">Import Payment Voucher / Journal Entry...</div>
-                </div>
-            </div>
-            <div class="item"><hr></div>
-            <div class="item">Close</div>
-            <div class="item">Close All</div>
-            <div class="item"><hr></div>
-            <div class="disabled item">
-                <i class="dropdown icon"></i>
-                <span class="text">Export Report</span>
-            </div>
-            <div class="item">Printer Setup...</div>
-            <div class="item"><hr></div>
-            <div class="item">Customize SQL Account Modules</div>
-            <div class="item"><hr></div>
-            <div class="item">
-                    <i class="dropdown icon"></i>
-                    <span class="text">Run</span>
-                    <div class="menu">
-                        <div class="item">Congifure Programs...</div>
-                    </div>
-                </div>
-            <div class="item">Exit</div>    
-          </div>
-        </a>
-        <a class="ui simple dropdown item">
-          Edit
-          <i class="dropdown icon"></i>
-          <div class="menu">
-            <div class="item">Undo&emsp;&emsp;&emsp;&emsp;Ctrl+Z</div>
-            <div class="item"><hr></div>
-            <div class="item">Cut&emsp;&emsp;&emsp;&emsp;&emsp;Ctrl+X</div>
-            <div class="item">Copy&emsp;&emsp;&emsp;&emsp;Ctrl+C</div>
-            <div class="item">Paste&emsp;&emsp;&emsp;&emsp;Ctrl+V</div>
-            <div class="item">Clear</div>
-            <div class="item">Select All&emsp;&emsp;&emsp;Ctrl+A</div>
-          </div>
-        </a>
-        <a class="item">
-          Browse
-        </a>
-      </div>
-
-      <div class="ui grid">
-            <div class="four wide column">
-              <div class="ui vertical fluid tabular menu">
-                <a class="item">
-                  G. Ledger
-                </a>
-                <a class="item">
-                    Customer
-                </a>
-                <a class="item">
-                    Supplier
-                </a>
-                <a class="item">
-                    Sales
-                </a>
-                <a class="item">
-                    Purchasae    
-                </a>
-                <a class="item">
-                    Stock
-                </a>
-              </div>
-            </div>
-            <div class="twelve wide stretched column">
-              <div class="ui segment">
-                This is an stretched grid column. This segment will always match the tab height
-              </div>
-            </div>
-          </div> -->
